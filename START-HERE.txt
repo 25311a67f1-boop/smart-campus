@@ -1,0 +1,39 @@
+SMART CAMPUS — ONE-TIME SETUP
+
+1. Extract this ZIP.
+2. Open THIS folder in VS Code (the folder containing package.json).
+3. Open Terminal and run:
+
+   npm install
+   npm run dev
+
+4. Open http://localhost:3000
+
+REAL DATABASE:
+Copy .env.example to .env.local and put your PostgreSQL DATABASE_URL there.
+Supabase/Neon/Postgres are supported. The app creates its tables automatically.
+
+FACULTY / ADMIN:
+After a faculty/admin account exists, open /admin or use the Faculty / Admin Console link.
+
+NO DEMO ACADEMIC DATA IS SEEDED.
+Student dashboards show records entered through the faculty/admin console.
+
+
+STAFF ACCESS (LOCAL DEVELOPMENT)
+If this is the first run and no Faculty/Admin exists:
+1. Open http://localhost:3000/staff-setup
+2. Create the first Admin account. You can also create a Faculty account there.
+3. Go back to http://localhost:3000/login and sign in.
+4. Student accounts go to /dashboard automatically. Faculty/Admin accounts go to /admin automatically.
+5. The staff setup page disables itself after the first staff account exists.
+6. In the Admin Console, campus staff can enter attendance, academic performance, assignments, participation, and events.
+
+Do not use the local staff-setup bootstrap page for a production deployment.
+
+REAL DATA FLOW TEST
+1. Log in as Faculty or Admin.
+2. Open Faculty & Admin Console.
+3. Select a student and add Attendance, Performance, Assignment, Participation, or Event data.
+4. Log out and log in as that student.
+5. The Student Dashboard reads the same stored records. Assignments can also be marked completed by the student.

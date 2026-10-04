@@ -1,0 +1,8 @@
+{
+  "name": "Smart Campus Intelligence",
+  "description": "Turn campus data into meaningful insights with intelligent analytics, real-time information, and AI-powered recommendations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
